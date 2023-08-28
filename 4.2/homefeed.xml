@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+
+<channel>
+	<title>Pontus Cedrell - dåtid, nutid och framtid</title>
+	<link>http://my_url.com/home.html</link>
+	<description>Denna hemsida handlar om mig själv där jag måste berätta om mig själv i kursen webbutveckling 1. </description>
+	<item>
+		<title>Varmt välkommen till min hemsida!</title>
+		<link>http://my_url.com/home.html</link>
+		<description>Denna webbplats är en del i mitt arbete i kursen Webbutveckling 1. På den här webbplatsen berättar jag lite om mig själv, mina intressen, vilka mål jag har i livet och vad som gjort att jag är där jag är idag. Jag skulle vilja sammanfatta mina tre intressen till IT, idrott och resor. Du är välkommen att läsa mer om mig och mina fina sidor i navigationsmenyn här uppe eller läsa en bättre sammanfattning längre ner.</description>
+		<guid>http://my_url.com/home.html/xml/1233</guid>
+	</item>
+	<item>
+		<title>IT - Informationsteknologi</title>
+		<link>http://my_url.com/home.htmll</link>
+		<description>Jag har sedan barnsben haft ett intresse för det tekniska och inte minst datorer. Det har funnits ett
+				intresse av att förstå hur saker fungrear, och inget var så häftigt som när jag upptäckte BIOS för fösta
+				gången. Sedan dess har kunskaperna byggts på och jag har fått en bättre förståelse vad
+				datorkomponenterna gör och vad de är till för.</description>
+	</item>
+	<item>
+		<title>Idrott och hälsa</title>
+		<link>http://my_url.com/home.html</link>
+		<description>På helgerna (pre-corona) så brukade jag döma basketmatcher. Det var ett bra sätt att tjäna lite
+				extrapengar och jag fick även lite motion på köpet. Jag trivdes i rollen och man lärde känna många nya
+				vänner. Jag väntar ivrigt på att matcherna ska dra igång igen efter det långa uppehållet!</description>
+	</item>
+	<item>
+		<title>Resa</title>
+		<link>http://my_url.com/home.html</link>
+		<description>INRIKES Det är något speciellt med tåg som ger en charm och intresse som jag inte riktigt kan säga med något
+				annat. Kanske faktumet att det satsas mycket på järnväg i Sverige och att den också är så välutvecklad,
+				särskilt med sin historia UTRIKES Även här finns en sak som jag saknar från tiden innan covid-19. Jag älskade att resa runt i Europa,
+				bl.a.</description>
+	</item>
+
+</channel>
+
+</rss>

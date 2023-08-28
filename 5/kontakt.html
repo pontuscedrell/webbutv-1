@@ -1,0 +1,136 @@
+<!doctype HTML>
+<html class="no-js" lang="">
+  <head>
+  <meta charset="UTF-8">
+  <title>Responsiv Design</title>
+  <meta name="theme-color" content="#DB3340"><!--Ger Chromes meny på telefonen en lite roligare färg än grå!-->
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="icon" href="favicon.png" type="image/x-icon"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+ 
+    // Handle menu toggling
+    $("#flip").click(function() {
+        $("#panel").slideToggle("slow");
+ 
+        if ($("#flip").text() == "Visa meny")
+            $("#flip").text("Dölj meny");
+        else
+            $("#flip").text("Visa meny")
+    });
+ 
+    // Handle "Scroll to Top" event
+    $("#moveup").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+ 
+    // Handle scroll events
+    $(window).scroll(function() {
+        // Show or hide "Scroll to Top" button
+        if ($(this).scrollTop() > 100)
+            $('#moveup').fadeIn();
+        else
+            $('#moveup').fadeOut();
+ 
+        // Make sticky header static or fixed based on scroll position
+        var stickyHeaderTop = $('#stickyheader').offset().top;
+        var windowScrollTop = $(window).scrollTop();
+ 
+        if (windowScrollTop > 125 )
+            $('#stickyheader').addClass('navscroll');
+            $('#sneakydiv').
+        else
+            $('#stickyheader').removeClass('navscroll');
+    });
+});
+</script>
+</head>
+<body>
+  <header class="col-12">
+    <h>GESELLPROVET</h>
+  </header>
+
+<div id="stickyheader">
+  <nav class="col-12">
+    <ul>
+    <li><div id="flip">Visa meny</div></li>
+     <div id="panel" style="display:none;">
+      <li><a href="index.html">Hem</a></li>
+      <li><a href="nyheter.html">Nyheter</a></li>
+      <li><a href="kontakt.html" class="active">Kontakt</a></li>
+      <li><a href="#">Om Oss</a></li>
+      </div>
+    </ul>
+  </nav>
+</div>
+
+<div id="stickyalias"></div>
+<div id="sneakydiv"></div>
+
+
+
+
+  <section class="col-12 col-s-12 col-d-12">
+    <h1>Kontakta oss</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis vestibulum mi. Nam elit dolor, finibus eu ornare vitae, sodales a turpis. Ut ullamcorper purus tellus, eu maximus erat fringilla in. Nulla a augue ut ligula ultrices hendrerit id ut nisi.</p><br>
+  </section>
+
+<section class="col-12 col-s-8 col-d-8">
+  <h1>Kontaktformulär</h1>
+  <form action="">
+      
+      <input type="text" name="fnamn" placeholder="Förnamn">
+      <input type="text" name="enamn" placeholder="Efternamn">
+      <input type="email" name="email" placeholder="E-postadress"><br>
+      <input type="phone" name="tnr" placeholder="Mobilnummer">
+      
+      <select id="land" name="land">
+        <option selected disabled>-- Vänligen välj ett land --</option>
+        <option value="sverige">Sverige</option>
+        <option value="norge">Norge</option>
+        <option value="finland">Finland</option>
+        <option value="danmark">Danmark</option>
+      </select><br>
+
+      
+      <textarea id="text" name="text" placeholder="Ange ditt meddelande"></textarea>
+
+      <input type="checkbox" id="tac" name="tac" value="">
+      <label for="tac">Jag har läst och godkänt <a href="">villkoren</a></label><br>
+
+      <input type="submit">
+ 
+  </form>
+
+</section>
+
+<aside class="col-12 col-s-4 col-d-4">
+  <h1>Sidotext</h1>
+  <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis vestibulum mi. Nam elit dolor, finibus eu ornare vitae, sodales a turpis. Ut ullamcorper purus tellus, eu maximus erat fringilla in. Nulla a augue ut ligula ultrices hendrerit id ut nisi. Nunc id ex nec dui pulvinar commodo id vitae tortor. Vivamus fermentum quam ut metus rhoncus tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis vestibulum mi. Nam elit dolor, finibus eu ornare vitae, sodales a turpis. Ut ullamcorper purus tellus, eu maximus erat fringilla in. Nulla a augue ut ligula ultrices hendrerit id ut nisi. Nunc id ex nec dui pulvinar commodo id vitae tortor. Vivamus fermentum quam ut metus rhoncus tempus.</p>
+</aside>
+
+<section class="col-12 col-s-8 col-d-8">
+</section>
+
+<footer class="col-12">
+  <address>
+    <p><b>Pontus Cedrell</b><br>
+    <a href="tel:0762297070">076-229 70 70</a><br>
+    <a href="mailto:pontus.cedrell@gmail.com">pontus.cedrell@gmail.com</a></p>
+  </address>
+</footer>
+  
+<div id="moveup">
+
+<img src="arrow_up_1.png" id="arrow">
+</div>
+  
+  
+  </body>
+</html>
+

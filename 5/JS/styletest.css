@@ -1,0 +1,26 @@
+body {
+	background-color: lightgrey;
+	padding-left: 40%;
+	padding-top: 20%;
+}
+
+.button2 {
+	color: red;
+	background-color: blue;
+	border-radius: 20px;
+	}
+
+.button3 {
+	width: 100%;
+}
+
+.box {
+	float: left;
+	background-color: grey;
+	width: 100px;
+}
+
+input[type="text"] {
+	width: 96px;
+	border-radius: 5px;
+}

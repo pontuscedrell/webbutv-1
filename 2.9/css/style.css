@@ -1,0 +1,197 @@
+@font-face {
+  font-family: roboto;
+  src: url(Roboto-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  background-color: grey;
+}
+
+li {
+  list-style: square;
+}
+
+p {
+  padding: 1em;
+}
+
+h2:hover {
+  color: red;
+  border: 1px solid green;
+  transform: scaleY(1.5);
+  transition: 100;
+}
+
+table {
+  table-layout: auto;
+}
+
+a {
+  color: green;
+  font: 15px Arial, sans-serif;
+}
+
+#textwrap {
+  text-align: justify;
+}
+
+#float {
+  float: left;
+  margin: 5px;
+  background: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  cursor: crosshair;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:active {
+  color: yellowgreen;
+}
+
+figcaption {
+  justify-content: center;
+  text-align: justify;
+}
+
+img {
+  background: no-repeat;
+}
+
+h1 {
+  color: #e303fc;
+  letter-spacing: normal;
+  font-family: roboto;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  min-height: 200px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+nav {
+  background: #f0f0f0;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+main {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+section {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+aside {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 5px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 1em;
+  border-radius: 5px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  border: 2px solid #e303fc;
+  background-image: url('../img/bolt.png');
+  background-position: 1px 1px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  height: 30px;
+  background-size: 30px;
+}
+
+input:focus {
+  background-color: lightskyblue;
+}
+
+/* Medium devices */
+@media only screen and (min-width: 600px) {
+  body {
+    margin: 0;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1em;
+  }
+  
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  aside {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+/* Large devices */
+@media only screen and (min-width: 1024px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 1em;
+  }
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  aside {
+    grid-column-start: 3;
+  }
+
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}

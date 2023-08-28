@@ -1,0 +1,121 @@
+<!doctype HTML>
+<html class="no-js" lang="">
+  <head>
+  <meta charset="UTF-8">
+  <title>Responsiv Design</title>
+  <meta name="theme-color" content="#DB3340"><!--Ger Chromes meny på telefonen en lite roligare färg än grå!-->
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="icon" href="favicon.png" type="image/x-icon"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+ 
+    // Handle menu toggling
+    $("#flip").click(function() {
+        $("#panel").slideToggle("slow");
+ 
+        if ($("#flip").text() == "Visa meny")
+            $("#flip").text("Dölj meny");
+        else
+            $("#flip").text("Visa meny")
+    });
+ 
+    // Handle "Scroll to Top" event
+    $("#moveup").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+ 
+    // Handle scroll events
+    $(window).scroll(function() {
+        // Show or hide "Scroll to Top" button
+        if ($(this).scrollTop() > 100)
+            $('#moveup').fadeIn();
+        else
+            $('#moveup').fadeOut();
+ 
+        // Make sticky header static or fixed based on scroll position
+        var stickyHeaderTop = $('#stickyheader').offset().top;
+        var windowScrollTop = $(window).scrollTop();
+ 
+        if (windowScrollTop > 125 )
+            $('#stickyheader').addClass('navscroll');
+            $('#sneakydiv').
+        else
+            $('#stickyheader').removeClass('navscroll');
+    });
+});
+</script>
+</head>
+<body>
+  <header class="col-12">
+    <h>GESELLPROVET</h>
+  </header>
+
+<div id="stickyheader">
+  <nav class="col-12">
+    <ul>
+    <li><div id="flip">Visa meny</div></li>
+     <div id="panel" style="display:none;">
+      <li><a href="index.html">Hem</a></li>
+      <li><a href="nyheter.html" class="active">Nyheter</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="#">Om Oss</a></li>
+      </div>
+    </ul>
+  </nav>
+</div>
+
+<div id="stickyalias"></div>
+<div id="sneakydiv"></div>
+
+
+  <article class="col-12 col-s-6 col-d-8">
+    <img src="https://placehold.co/600x400">
+  </article>
+  <article class="col-12 col-s-6 col-d-4">
+    <h1>Rubrik</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis vestibulum mi. Nam elit dolor, finibus eu ornare vitae, sodales a turpis. Ut ullamcorper purus tellus, eu maximus erat fringilla in. Nulla a augue ut ligula ultrices hendrerit id ut nisi. Nunc id ex nec dui pulvinar commodo id vitae tortor. Vivamus fermentum quam ut metus rhoncus tempus. Aliquam vestibulum quis orci condimentum blandit. Sed id erat ut massa dapibus maximus. Nulla a augue ut ligula ultrices.</p><br>
+  </article>
+
+  <article class="col-12 col-s-12 col-d-12">
+    <h1>Rubrik 2</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis vestibulum mi. Nam elit dolor, finibus eu ornare vitae, sodales a turpis. Ut ullamcorper purus tellus, eu maximus erat fringilla in. Nulla a augue ut ligula ultrices hendrerit id ut nisi. Nunc id ex nec dui pulvinar commodo id vitae tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis vestibulum mi. Nam elit dolor, finibus eu ornare vitae, sodales a turpis. Ut ullamcorper purus tellus, eu maximus erat fringilla in. Nulla a augue ut ligula ultrices hendrerit id ut nisi. Nunc id ex nec dui pulvinar commodo id vitae tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis vestibulum mi. Nam elit dolor, finibus eu ornare vitae, sodales a turpis. Ut ullamcorper purus tellus, eu maximus erat fringilla in. Nulla a augue ut ligula ultrices hendrerit id ut nisi. Nunc id ex nec dui pulvinar commodo id vitae tortor.</p><br>
+  
+    <h1>Rubrik 3</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis vestibulum mi. Nam elit dolor, finibus eu ornare vitae, sodales a turpis. Ut ullamcorper purus tellus, eu maximus erat fringilla in. Nulla a augue ut ligula ultrices hendrerit id ut nisi. Nunc id ex nec dui pulvinar commodo id vitae tortor. Vivamus fermentum quam ut metus rhoncus tempus. Aliquam vestibulum quis orci condimentum blandit. Sed id erat ut massa dapibus maximus. Proin semper tempor nibh vitae rutrum. Etiam at tempor diam, eu congue erat. Mauris feugiat vestibulum odio, non ultrices augue hendrerit non. Maecenas suscipit dolor nec eleifend auctor. Etiam sodales tellus in bibendum malesuada. Aenean aliquam aliquam nulla, in cursus ligula malesuada id. In eu elit sed arcu egestas pulvinar non ultrices mi.</p>
+  </article>
+
+<section class="col-6 col-s-6 col-d-6">
+  <h1>Sektion 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis vestibulum mi. Nam elit dolor, finibus eu ornare vitae, sodales a turpis. Ut ullamcorper purus tellus, eu maximus erat fringilla in. Nulla a augue ut ligula ultrices hendrerit id ut nisi. Nunc id ex nec dui pulvinar commodo id vitae tortor. Vivamus fermentum quam ut metus rhoncus tempus. </p><br>
+
+  <h1>Sektion 2 </h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis vestibulum mi. Nam elit  dolor, finibus eu ornare vitae, sodales a turpis. Ut ullamcorper purus tellus, eu maximus erat fringilla in. Nulla a augue ut ligula ultrices hendrerit id ut nisi. Nunc id ex nec dui pulvinar commodo id vitae tortor. Vivamus fermentum quam ut metus rhoncus tempus. </p>
+</section>
+
+<aside class="col-6 col-s-6 col-d-6">
+  <h1>Sidotext</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis vestibulum mi. Nam elit dolor, finibus eu ornare vitae, sodales a turpis. Ut ullamcorper purus tellus, eu maximus erat fringilla in. Nulla a augue ut ligula ultrices hendrerit id ut nisi. Nunc id ex nec dui pulvinar commodo id vitae tortor. Vivamus fermentum quam ut metus rhoncus tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis vestibulum mi. Nam elit dolor, finibus eu ornare vitae, sodales a turpis. Ut ullamcorper purus tellus, eu maximus erat fringilla in. Nulla a augue ut ligula ultrices hendrerit id ut nisi. Nunc id ex nec dui pulvinar commodo id vitae tortor. Vivamus fermentum quam ut metus rhoncus tempus.</p>
+</aside>
+
+
+<footer class="col-12">
+  <address>
+    <p><b>Pontus Cedrell</b><br>
+    <a href="tel:0762297070">076-229 70 70</a><br>
+    <a href="mailto:pontus.cedrell@gmail.com">pontus.cedrell@gmail.com</a></p>
+  </address>
+</footer>
+  
+<div id="moveup">
+
+<img src="arrow_up_1.png" id="arrow">
+</div>
+  
+  
+  </body>
+</html>
+
